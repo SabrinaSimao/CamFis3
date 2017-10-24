@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 # Camada Física da Computação
 # Exemplo socket server 
 ## https://pymotw.com/2/socket/tcp.html
@@ -6,7 +8,7 @@ import socket
 import sys
 
 def main():
-    PORTA = 1238
+    PORTA = 1234
 
     print("Inicializando socket TCP/IP")
     # Create a TCP/IP socket

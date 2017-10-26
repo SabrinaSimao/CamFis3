@@ -41,8 +41,9 @@ BPSK teórico|BPSK com ruído|
 
 ## Gráficos do Tx
 
-### Frequencia do sinal não codificado
-
+### Tempo e frequencia do sinal não codificado
+O primeiro gráfico mostra os valores binários a serem enviados no tempo
+O segundo gráfico mostra a frequência em que está sendo enviado certo sinal binário
 <a href="url"><img src="Imagens/5.png" height="400"></a>
 	
 ### Tempo e frequência do sinal codificado

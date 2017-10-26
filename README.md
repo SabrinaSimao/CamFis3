@@ -26,8 +26,11 @@ Este mesmo script realiza a demodulação e atribui cada byte a uma letra, fazen
 ## BPSK
 
 BPSK (Binary Phase Shift Keying) é um tipo de Phase Shift Keying que usa termos binários para modular digitalmente os sinais no mapa de constelações. Dessa forma, cada sinal é recebido ou como 0, ou como 1. 
-Caso seja 0, o BPSK usa a equação S (t) = ± A* cos (2*pi*fc*t)
-Caso seja 1, é usado S (t) = A* cos (2*pi*fc*t+pi)
+
+Caso seja 0, o BPSK usa a equação S (t) = ± A* cos (2*π*f*t)
+
+Caso seja 1, é usado S (t) = A* cos (2*π*f*t+π)
+
 Como os valores não são sempre iguais, devido à ruidos, o mapa fica com algumas divergências:
 
 

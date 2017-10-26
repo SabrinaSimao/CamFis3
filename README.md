@@ -41,9 +41,9 @@ BPSK teórico|BPSK com ruído|
 
 ## Gráficos do Tx
 
-### Frequencia do sinal não codificado| 
-:-------------------------:|:-------------------------:
-![](Imagens/5.png) | 
+### Frequencia do sinal não codificado
+
+![](Imagens/5.png =250x) 
 	
 ### Tempo e frequência do sinal codificado
 

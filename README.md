@@ -61,11 +61,11 @@ BPSK teórico|BPSK com ruído|
 
 ### Sinal de áudio recebido no tempo e em frequência
 
-<a href="url"><img src="Imagens/1.png" height="400"></a>
+<a href="url"><img src="Imagens/1.png" height="800"></a>
 
 ### Sinal de áudio demodulado no tempo e em frequência
 
-<a href="url"><img src="Imagens/2.png" height="400"></a>
+<a href="url"><img src="Imagens/2.png" height="800"></a>
 
 ### Diagrama de Constelação
 

@@ -29,9 +29,12 @@ BPSK (Binary Phase Shift Keying) é um tipo de Phase Shift Keying que usa termos
 Caso seja 0, o BPSK usa a equação S (t) = ± A* cos (2*pi*fc*t)
 Caso seja 1, é usado S (t) = A* cos (2*pi*fc*t+pi)
 Como os valores não são sempre iguais, devido à ruidos, o mapa fica com algumas divergências:
- BPSK teórico|BPSK com ruído|
+
+
+BPSK teórico|BPSK com ruído|
 :-------------------------:|:-------------------------:
-![](imagens/bpsk.png)   |![](imagens/bpskn.png)   
+![](Imagens/bpsk.png)   |![](Imagens/bpskn.png)   
+
 
 ## Gráficos do Tx
 

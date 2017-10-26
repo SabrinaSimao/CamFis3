@@ -7,8 +7,8 @@ Alexandre Y.
 
 ## Frequência e Banda
 
-A frequência utilizada é a que melhor divide o diagrama de constelação em dois polos espelhados. Dessa forma, nossa frequência foi de 2200Hz.
-A banda ocupada pelo sinal é sempre o dobro da frequência, ou seja, 4400Hz.
+A frequência utilizada é a que melhor divide o diagrama de constelação em dois polos espelhados. Dessa forma, nossa frequência foi de 2400Hz.
+A banda ocupada pelo sinal é sempre o dobro da frequência, ou seja, 4800Hz.
 
 ## Funcionamento
 
@@ -43,9 +43,13 @@ BPSK teórico|BPSK com ruído|
 
 ### Frequencia do sinal não codificado
 
+![](Imagens/bpsk.png)   |
+	
 ### Tempo e frequência do sinal codificado
 
 ### Tempo e frequência do sinal modulado
+
+### Diagrama de Constelação
 
 ## Gráficos do Rx
 

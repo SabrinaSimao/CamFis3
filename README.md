@@ -89,8 +89,10 @@ Ambos gráficos mostram a demodulação do sinal recebido, ou seja, possuem rest
 
 Este diagrama de constelação mostra ambos polos da modulação BPSK. Nesta modulação, é desejado que os sinais recebidos fiquem com 180 graus de diferença, e evitem cair no centro (0,0). Eles deveriam cair em 1 e -1, porém o ruído do meio faz com que caiam em pontos próximos, como explicado anteriormente.
 
+<a href="url"><img src="Imagens/const2.png" height="400"></a>
+
+
+
 
 
 Sabrina & Ale
-
-<a href="url"><img src="Imagens/const2.png" height="400"></a>

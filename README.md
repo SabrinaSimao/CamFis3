@@ -43,30 +43,30 @@ BPSK teórico|BPSK com ruído|
 
 ### Frequencia do sinal não codificado
 
-<a href="url"><img src="Imagens/4.png" height="400"></a>
+<a href="url"><img src="Imagens/5.png" height="400"></a>
 	
 ### Tempo e frequência do sinal codificado
 
-![](Imagens/4.png) 
+<a href="url"><img src="Imagens/4.png" height="400"></a>
 
 ### Tempo e frequência do sinal modulado
 
-![](Imagens/3.png) 
+<a href="url"><img src="Imagens/3.png" height="400"></a>
 
 ### Diagrama de Constelação
 
-![](Imagens/const1.png) 
+<a href="url"><img src="Imagens/const1.png" height="400"></a>
 
 ## Gráficos do Rx
 
 ### Sinal de áudio recebido no tempo e em frequência
 
-![](Imagens/1.png) 
+<a href="url"><img src="Imagens/1.png" height="400"></a>
 
 ### Sinal de áudio demodulado no tempo e em frequência
 
-![](Imagens/2.png) 
+<a href="url"><img src="Imagens/2.png" height="400"></a>
 
 ### Diagrama de Constelação
 
-![](Imagens/const2.png) 
+<a href="url"><img src="Imagens/const2.png" height="400"></a>

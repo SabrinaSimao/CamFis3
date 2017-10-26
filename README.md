@@ -43,7 +43,7 @@ BPSK teórico|BPSK com ruído|
 
 ### Frequencia do sinal não codificado
 
-![](Imagens/5.png =250x) 
+![](Imagens/5.png =100x50) 
 	
 ### Tempo e frequência do sinal codificado
 

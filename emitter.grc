@@ -140,7 +140,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>2200</value>
+      <value>2400</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -277,6 +277,69 @@
     </param>
   </block>
   <block>
+    <key>variable_qtgui_range</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>45</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1000, 0)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>sps</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Samples por segundo</value>
+    </param>
+    <param>
+      <key>min_len</key>
+      <value>200</value>
+    </param>
+    <param>
+      <key>orient</key>
+      <value>Qt.Horizontal</value>
+    </param>
+    <param>
+      <key>start</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>step</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>stop</key>
+      <value>300</value>
+    </param>
+    <param>
+      <key>rangeType</key>
+      <value>int</value>
+    </param>
+    <param>
+      <key>widget</key>
+      <value>counter_slider</value>
+    </param>
+  </block>
+  <block>
     <key>variable</key>
     <param>
       <key>comment</key>
@@ -288,7 +351,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(272, 4)</value>
+      <value>(1144, 28)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -296,18 +359,81 @@
     </param>
     <param>
       <key>id</key>
-      <value>sps</value>
+      <value>volume</value>
     </param>
     <param>
       <key>value</key>
-      <value>45</value>
+      <value>volume_slider*0.01</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_qtgui_range</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(864, 8)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>volume_slider</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Volume</value>
+    </param>
+    <param>
+      <key>min_len</key>
+      <value>200</value>
+    </param>
+    <param>
+      <key>orient</key>
+      <value>Qt.Horizontal</value>
+    </param>
+    <param>
+      <key>start</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>step</key>
+      <value>5</value>
+    </param>
+    <param>
+      <key>stop</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>rangeType</key>
+      <value>float</value>
+    </param>
+    <param>
+      <key>widget</key>
+      <value>slider</value>
     </param>
   </block>
   <block>
     <key>analog_sig_source_x</key>
     <param>
       <key>amp</key>
-      <value>1</value>
+      <value>volume</value>
     </param>
     <param>
       <key>alias</key>
@@ -390,7 +516,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 172)</value>
+      <value>(1088, 372)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -500,7 +626,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1000, 224)</value>
+      <value>(832, 304)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -543,7 +669,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/alexandre/Documents/Insper/2017-2/CFC/CamFis3/Drummond-residos.txt</value>
+      <value>/home/alexandre/Documents/Insper/2017-2/CFC/CamFis3/message.txt</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -728,7 +854,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1064, 292)</value>
+      <value>(1048, 572)</value>
     </param>
     <param>
       <key>gui_hint</key>

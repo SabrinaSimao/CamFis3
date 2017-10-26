@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Thu Oct 26 10:02:16 2017
+# Generated: Thu Oct 26 13:39:19 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -68,7 +68,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.nfilts = nfilts = 25
         self.samp_rate = samp_rate = 44.1E3
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(nfilts, nfilts, 1.0/float(sps), 0.35, 45*nfilts)
-        self.fc_slider = fc_slider = 2400
+        self.fc_slider = fc_slider = 2200
 
         self.BPSK = BPSK = digital.constellation_bpsk().base()
 
@@ -76,7 +76,10 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self._fc_slider_range = Range(0, 18200, 200, 2400, 150)
+        self._sps_range = Range(1, 300, 1, 45, 200)
+        self._sps_win = RangeWidget(self._sps_range, self.set_sps, 'Samples por Segundo', "counter_slider", int)
+        self.top_layout.addWidget(self._sps_win)
+        self._fc_slider_range = Range(0, 18200, 200, 2200, 150)
         self._fc_slider_win = RangeWidget(self._fc_slider_range, self.set_fc_slider, 'fc', "counter_slider", float)
         self.top_layout.addWidget(self._fc_slider_win)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_f(

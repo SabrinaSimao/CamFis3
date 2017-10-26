@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Thu Oct 26 11:26:27 2017
+# Generated: Thu Oct 26 13:35:09 2017
 ##################################################
 
 if __name__ == '__main__':
@@ -63,8 +63,10 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
+        self.volume_slider = volume_slider = 100
         self.sps = sps = 45
         self.nfilts = nfilts = 25
+        self.volume = volume = volume_slider*0.01
         self.samp_rate = samp_rate = 44.1E3
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(nfilts, nfilts, 1.0/float(sps), 0.35, 45*nfilts)
         self.fc_slider = fc_slider = 2400
@@ -75,9 +77,15 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
+        self._sps_range = Range(1, 300, 1, 45, 200)
+        self._sps_win = RangeWidget(self._sps_range, self.set_sps, 'Samples por segundo', "counter_slider", int)
+        self.top_layout.addWidget(self._sps_win)
         self._fc_slider_range = Range(0, 18200, 200, 2400, 150)
         self._fc_slider_win = RangeWidget(self._fc_slider_range, self.set_fc_slider, 'fc', "counter_slider", float)
         self.top_layout.addWidget(self._fc_slider_win)
+        self._volume_slider_range = Range(0, 100, 5, 100, 200)
+        self._volume_slider_win = RangeWidget(self._volume_slider_range, self.set_volume_slider, 'Volume', "slider", float)
+        self.top_layout.addWidget(self._volume_slider_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
         	1024, #size
         	samp_rate, #samp_rate
@@ -147,7 +155,7 @@ class top_block(gr.top_block, Qt.QWidget):
         	payload_length=1,
         )
         self.audio_sink_0 = audio.sink(44100, '', True)
-        self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, fc_slider, 1, 0)
+        self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, fc_slider, volume, 0)
 
         ##################################################
         # Connections
@@ -165,6 +173,13 @@ class top_block(gr.top_block, Qt.QWidget):
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
 
+    def get_volume_slider(self):
+        return self.volume_slider
+
+    def set_volume_slider(self, volume_slider):
+        self.volume_slider = volume_slider
+        self.set_volume(self.volume_slider*0.01)
+
     def get_sps(self):
         return self.sps
 
@@ -178,6 +193,13 @@ class top_block(gr.top_block, Qt.QWidget):
     def set_nfilts(self, nfilts):
         self.nfilts = nfilts
         self.set_rrc_taps(firdes.root_raised_cosine(self.nfilts, self.nfilts, 1.0/float(self.sps), 0.35, 45*self.nfilts))
+
+    def get_volume(self):
+        return self.volume
+
+    def set_volume(self, volume):
+        self.volume = volume
+        self.analog_sig_source_x_0.set_amplitude(self.volume)
 
     def get_samp_rate(self):
         return self.samp_rate
